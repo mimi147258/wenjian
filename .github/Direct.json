@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "",
+        ""
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".gamer520.com",
+        ".cattt.asia"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "",
+        ""
+      ]
+    },
+    {
+      "ip_cidr": [
+        "",
+        ""
+      ]
+    }
+  ]
+}
