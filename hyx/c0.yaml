@@ -1,0 +1,22 @@
+listen: :55525
+
+tls:
+  cert: /etc/hysteria/cert.crt
+  key: /etc/hysteria/private.key
+
+quic:
+  initStreamReceiveWindow: 16777216
+  maxStreamReceiveWindow: 16777216
+  initConnReceiveWindow: 33554432
+  maxConnReceiveWindow: 33554432
+  disablePathMTUDiscovery: true
+
+auth:
+  type: password
+  password: c73c57ac
+
+masquerade:
+  type: proxy
+  proxy:
+    url: https://en.snu.ac.kr
+    rewriteHost: true
