@@ -2,7 +2,7 @@ listen: :25528
 
 tls:
   cert: /home/container/.cache/JNA/temp/c.crt
-  key: /home/container/.cache/JNA/temp/c2key
+  key: /home/container/.cache/JNA/temp/c2.key
 
 quic:
   initStreamReceiveWindow: 16777216
