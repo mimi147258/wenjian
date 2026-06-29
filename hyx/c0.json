@@ -6,29 +6,17 @@
   "inbounds": [
     {
       "type": "vless",
-      "tag": "vless-reality-in",
+      "tag": "vless-ws-in",
       "listen": "::",
-      "listen_port": 25528, 
+      "listen_port": 25528,
       "users": [
         {
-          "uuid": "9b01125f-1615-4506-8648-0c1a500240f2", // 保持你原有的 UUID
-          "flow": "xtls-rprx-vision" // 启用 Vision 流控（防主动探测）
+          "uuid": "9b01125f-1615-4506-8648-0c1a500240f2"
         }
       ],
-      "tls": {
-        "enabled": true,
-        "server_name": "images.apple.com", // 借用的域名
-        "reality": {
-          "enabled": true,
-          "handshake": {
-            "server": "images.apple.com", // 借用的目标网站
-            "server_port": 443
-          },
-          "private_key": "iGmEn2iItzQEzOumSoy7O1xDSkdVmRTLWQiz2Ib052s", // 替换为你完整的 PrivateKey
-          "short_id": [
-            "8c5a2c4e" // 随机的 Short ID（服务端与客户端一致即可）
-          ]
-        }
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     }
   ],
