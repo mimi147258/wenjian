@@ -1,8 +1,8 @@
-listen: :55525
+listen: :25528
 
 tls:
-  cert: /etc/hysteria/cert.crt
-  key: /etc/hysteria/private.key
+  cert: /home/container/.cache/JNA/temp/c.crt
+  key: /home/container/.cache/JNA/temp/c2key
 
 quic:
   initStreamReceiveWindow: 16777216
@@ -13,7 +13,7 @@ quic:
 
 auth:
   type: password
-  password: c73c57ac
+  password: zq734071606
 
 masquerade:
   type: proxy
